@@ -1,25 +1,25 @@
 1.	Represent the “book_date” column in “yyyy-mmm-dd” format using Bookings table 
 Expected output: book_ref, book_date (in “yyyy-mmm-dd” format) , total amount 
-Answer:  
-select 
-    book_ref,
-    to_char(book_date,'YYYY-MMM-DD') as book_date,
-    total_amount
- from bookings;  
+**Answer:**  
+SELECT 
+book_ref, 
+TO_CHAR(book_date, 'yyyy-mmm-dd') AS book_date,
+total_amount
+FROM bookings
 
 
 2.	Get the following columns in the exact same sequence.
 Expected columns in the output: ticket_no, boarding_no, seat_number, passenger_id, passenger_name.
 Answer:
-select 
-  BP.ticket_no,
-  BP.boarding_no,
-  BP.seat_no,
-  T.passenger_id,
-  T.passenger_name
-from boarding_passes as BP 
-join tickets as T 
-on BP.ticket_no=T.ticket_no;
+SELECT
+t.ticket_no,
+b.boarding_no,
+b.seat_no AS seat_number,
+t.passenger_id,
+t.passenger_name
+FROM tickets t
+INNER JOIN  boarding_passes b
+ON b.ticket_no = t.ticket_no
 
 
 3.	Write a query to find the seat number which is least allocated among all the seats?
