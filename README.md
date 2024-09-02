@@ -1,6 +1,6 @@
 # AirlineDB_Analysis_SQL
 # Overview
-AirlineDB is a comprehensive database management system to handle the complex data requirements of an airline company. The system provides an efficient and scalable solution for managing flight schedules, bookings, passenger information and more enabling airlines to streamline their operations and enhance the passenger experience.
+AirlineDB is a comprehensive database management system to handle the complex data requirements of an airline company. The system provides an efficient and Scalable solution for managing flight schedules, bookings, passenger information and more enabling airlines to streamline their operations and enhance the passenger experience.
 
 # Project Overview
 This SQL Capstone Project was undertaken to enhance and showcase proficiency in SQL by working with a simulated airline database. The project involves writing and executing complex SQL queries to extract meaningful insights from the data. The queries were designed to cover a wide range of SQL functionalities, including data transformation, joining multiple tables, window functions, and subqueries.
